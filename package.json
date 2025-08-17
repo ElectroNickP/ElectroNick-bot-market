@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:netlify": "next build --config next.config.netlify.js",
+    "build:netlify": "cp next.config.netlify.js next.config.js && next build && cp next.config.js next.config.original.js",
     "start": "next start",
     "lint": "next lint",
     "deploy": "vercel --prod",
