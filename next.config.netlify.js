@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
+  trailingSlash: true,
   images: {
+    unoptimized: true,
     domains: ['t.me', 'cdn4.telegram-cdn.org'],
   },
   env: {
